@@ -4,7 +4,7 @@ function afficher (){
     var lastName = document.getElementById("lastName").value;
     var firstName = document.getElementById("firstName").value;
 
-    if(lastName.length <=0)
+    if(lastName.length <1)
     {
 
         var error = "Write your lastname";
@@ -12,7 +12,7 @@ function afficher (){
         return;
 
     }
-    if (firstName.length <=0)
+    if (firstName.length <1)
     {
 
         var error = "Write your firstname ";

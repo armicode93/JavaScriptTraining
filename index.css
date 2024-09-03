@@ -1,0 +1,15 @@
+/* Stile per il div con l'id "error" */
+.error {
+    color: red;                  
+    background-color: #fdd;      
+    border: 1px solid red;       
+    padding: 10px;               
+    margin-top: 10px;            
+    font-size: 14px;             
+    font-family: Arial, sans-serif;
+    border-radius: 5px;          
+}
+/* Nascondi il div se è vuoto */
+.error:empty {
+    display: none;
+}
