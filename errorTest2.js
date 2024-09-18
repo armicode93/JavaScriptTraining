@@ -2,6 +2,7 @@ function afficher2(){
     var lastName = document.getElementById("lastName").value;
     var firstName = document.getElementById("firstName").value;
     var age = document.getElementById("age").value;
+    var sexe= document.getElementById("sexe").value;
     var error = document.getElementById("error");
 
     var ageNumb = Number(age); 
@@ -25,6 +26,13 @@ function afficher2(){
         return;
     }
     error.innerHTML = "";
+    if(sexe< 1)
+        {
+            error.innerHTML = "Select your sexe";
+            
+            return;
+        }
+        error.innerHTML = "";
     
-    alert("Welcome " + lastName + " " + firstName+" "+age);
+    alert("Welcome " + lastName + " " + firstName+" "+sexe+" "+age);
 }
